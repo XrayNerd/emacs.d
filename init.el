@@ -44,6 +44,15 @@
 ;; Load configs for specific features and modes
 ;;----------------------------------------------------------------------------
 
+(require 'evil)
+(evil-mode 1)
+
+(evil-set-initial-state 'doc-view-mode
+                        'emacs)
+(add-hook 'doc-view-mode-hook
+          (lambda ()
+            (set (make-local-variable 'evil-emacs-state-cursor (list nil)))))
+
 (require-package 'wgrep)
 (require-package 'diminish)
 (require-package 'scratch)

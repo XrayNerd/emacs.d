@@ -360,6 +360,7 @@ typical word processor."
    `((R . t)
      (ditaa . t)
      (dot . t)
+     (C . t)
      (emacs-lisp . t)
      (gnuplot . t)
      (haskell . nil)
